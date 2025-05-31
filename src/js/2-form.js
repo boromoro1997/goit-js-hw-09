@@ -10,8 +10,9 @@ function formInfoSaver(e) {
     localStorage.setItem(key, JSON.stringify(formData));
 }
 function populateTextArea() {
-    const saved  = JSON.parse(localStorage.getItem(key));
+    const saved = localStorage.getItem(key);
     if (!saved) return;
+    const message = JSON.parse(saved);
     if (message.email) {
     form.elements.email.value = message.email;
     } 
