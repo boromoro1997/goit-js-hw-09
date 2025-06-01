@@ -29,3 +29,46 @@
     transform: scale(1.04);
     z-index: 10;
     position: relative;  }
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 360px;
+}
+    
+.feedback-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #2E2F42;
+}
+    
+.feedback-form input,
+.feedback-form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    resize: vertical;
+}
+.feedback-form textarea{
+height: 80px;
+}
+    
+.feedback-form button {
+    padding-left:16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    background: #4E75FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 95px;
+}
+    
+.feedback-form button:hover {
+   background: #6C8CFF;  }
